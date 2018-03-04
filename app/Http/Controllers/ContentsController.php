@@ -11,4 +11,8 @@ class ContentsController extends Controller
     {
         return view('contents/home');
     }
+    public function about()
+    {
+        return view('contents/about');
+    }
 }

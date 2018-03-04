@@ -11,8 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/home', 'ContentsController@home'); 
+Route::get('/', 'ContentsController@home'); 
+Route::get('/about', 'ContentsController@about'); 

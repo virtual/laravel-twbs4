@@ -1,0 +1,7 @@
+.subfeature {
+  .fa, .fab, .far, .fas { font-size: 124px; text-align: center; padding: .3rem; }
+  &> div > a {
+    text-align: center;
+    display: block;
+  }
+}

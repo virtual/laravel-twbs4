@@ -1,0 +1,70 @@
+#myCarousel {
+  margin-bottom: 2rem;
+}
+
+.carousel-item {
+  height: 500px;
+  background: #00675e;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  -webkit-filter: sepia(100%) hue-rotate(150deg) saturate(130%) brightness(100%);
+  filter: sepia(100%) hue-rotate(150deg) saturate(130%) brightness(100%);
+  opacity: .3;
+}
+
+@media (max-width: 767px) {
+  .carousel-item img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.topnav {
+  background-color: rgba(52, 58, 64, 0.7);
+}
+
+.topnav ul, .topnav li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav .nav-link {
+  display: inline-block;
+  color: rgba(207, 211, 216, 0.8);
+  padding: .5rem;
+}
+
+.navmenu {
+  background: rgba(175, 162, 162, 0.3);
+}
+
+.navmenu .nav-link {
+  color: rgba(9, 52, 105, 0.8);
+}
+
+.navmenu .navbar-brand {
+  line-height: 1.2rem;
+  padding-right: 20px;
+}
+
+.navmenu .navbar-brand > .fa, .navmenu .navbar-brand > .fas {
+  float: left;
+  font-size: 36px;
+  padding: 0 3px 0 0;
+}
+
+.subfeature .fa, .subfeature .fab, .subfeature .far, .subfeature .fas {
+  font-size: 124px;
+  text-align: center;
+  padding: .3rem;
+}
+
+.subfeature > div > a {
+  text-align: center;
+  display: block;
+}

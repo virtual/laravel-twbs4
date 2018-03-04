@@ -25,7 +25,10 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">
+              <i class="fa fa-hourglass-end" aria-hidden="true" title="0 minutes remain in your exam"></i>
+<span class="sr-only">0 minutes remain in your exam</span> Mew</a>
+
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Disabled</a>

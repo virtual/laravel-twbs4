@@ -2,32 +2,20 @@
 
 @section('feature')
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+ 
   <div class="carousel-inner">
+   
     <div class="carousel-item active">
-
-    <img src="{{ asset('images/alexis-brown-85793-unsplash.jpg') }}" /> 
-
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Education on your schedule</h1>
-          <p>With options including long-distance and evening courses, our classes work to accommodate your busy lifestyle</p>
-          <p><a class="btn btn-lg btn-secondary" href="#" role="button">View areas of study</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
     <img src="{{ asset('images/alexis-brown-82988-unsplash.jpg') }}" /> 
       
       <div class="container">
         <div class="carousel-caption">
           <h1>Advanced technology</h1>
           <p>Knight University's campus has the tools you need for all projects&mdash;big and small</p>
-          <p><a class="btn btn-lg btn-secondary" href="#" role="button">View labs</a></p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p> 
         </div>
       </div>
     </div>
@@ -53,9 +41,9 @@
 </div>
 @endsection
 
-@section('content')
-<h2 class="text-center">Creating life experiences</h2>
-<p class="lead text-center">How we help you build connections: </p>
+@section('subfeature')
+<h2 id="subfeature">Creating life experiences</h2>
+<p class="lead">How we help you build connections: </p>
 <div class="row subfeature">
   <div class="col-lg-4 col-md-6 text-center">
   <a href="#" aria-label="community"><span class="fas fa-users" aria-hidden="true"></span></a>
@@ -77,18 +65,33 @@
   </div><!-- /.col-lg-4 -->
 </div><!-- /.row -->
 
+@endsection
 
-<!-- START THE FEATURETTES -->
 
-<hr class="featurette-divider">
+@section('content')
+<div class="row featurette">
+  <div class="col-md-5 order-md-2">
+    <h2 class="featurette-heading">140+ Areas of Study</h2>
+    <p class="lead">Discover </p>
+    <a class="btn btn-info" href="#">View all</a>
+  </div>
+  <div class="offset-top col-md-7 order-md-1">
+      <img src="{{ asset('images/alexis-brown-85793-unsplash.jpg') }}" /> 
+  </div>
+</div>
+@endsection
 
+
+@section('content2')
+<h2 class="featurette-heading">Latest News and Events</h2>
 <div class="row featurette">
   <div class="col-md-7">
-    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+    
     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
   </div>
   <div class="col-md-5">
-    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+  <img alt="students study" src="{{ asset('images/alexis-brown-82988-unsplash.jpg') }}" /> 
+  
   </div>
 </div>
 
@@ -100,7 +103,7 @@
     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
   </div>
   <div class="col-md-5 order-md-1">
-    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      <img src="{{ asset('images/alexis-brown-85793-unsplash.jpg') }}" /> 
   </div>
 </div>
 
@@ -112,7 +115,7 @@
     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
   </div>
   <div class="col-md-5">
-    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+    <img src="{{ asset('images/stefan-stefancik-257625-unsplash.jpg') }}" /> 
   </div>
 </div>
 @endsection

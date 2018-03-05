@@ -1,5 +1,5 @@
-#myCarousel {
-  margin-bottom: 2rem;
+.carousel-caption {
+  bottom: 25%;
 }
 
 .carousel-item {
@@ -20,6 +20,29 @@
     width: auto;
     height: 100%;
   }
+}
+
+.action-fa .fas {
+  color: #00629B;
+  margin-top: -1rem;
+  display: block;
+  z-index: 4;
+  position: relative;
+  font-size: 2rem;
+}
+
+.action-fa .fas:before {
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.action-fa:hover a:hover {
+  text-decoration: none;
+}
+
+.action-fa:hover .fas {
+  color: #004268;
 }
 
 .topnav {
@@ -67,4 +90,20 @@
 .subfeature > div > a {
   text-align: center;
   display: block;
+}
+
+@media (min-width: 768px) {
+  .offset-top {
+    margin-top: -3rem;
+  }
+}
+
+footer {
+  overflow: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer a {
+  color: #00f5df;
 }

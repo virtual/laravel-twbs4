@@ -13815,6 +13815,16 @@ var app = new Vue({
   el: '#app'
 });
 
+jQuery(document).ready(function () {
+  // Smooth scroll to anchor
+  $("a.scrollable").click(function (event) {
+    event.preventDefault();
+    $("html, body").animate({
+      scrollTop: $($(this).attr("href")).offset().top - 40
+    }, 500);
+  });
+});
+
 /***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {

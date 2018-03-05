@@ -1,6 +1,7 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Rubik|Spectral:400,600"); 
 
 // Variables
 @import "variables";
@@ -13,4 +14,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-main > .container { margin-top: 1rem;}
+main > .container { margin-top: 1rem; padding: 2rem 0;}
+.padded { padding: 2rem 0;} 
+img { max-width: 100%; width: auto; height: auto;}

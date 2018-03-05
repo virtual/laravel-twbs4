@@ -5,3 +5,8 @@
     display: block;
   }
 }
+@media (min-width: 768px) {
+  .offset-top {
+    margin-top: -3rem;
+  }
+}

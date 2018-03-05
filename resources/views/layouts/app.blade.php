@@ -49,8 +49,13 @@
            
           </ul>
           <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="fa fa-search" aria-hidden="true"></span></button>
+
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary"><span class="fa fa-search" aria-hidden="true"></span></button>
+              </div>
+            </div>
           </form>
         </div>
         </div>
@@ -61,20 +66,108 @@
 
      <!-- feature area --> 
      @yield('feature')
-
+     <div class="text-center action-fa">
+          <a href="#subfeature" class="scrollable"><span class="fas fa-arrow-circle-down"></span></a>
+      </div>
       <div class="container">
-
-      @yield('content')
-
-      <hr class="featurette-divider">
+      @yield('subfeature')
+      
       </div><!-- /.container -->
 
+<div class="padded bg-primary text-light">
+  <div class="container">
+    @yield('content')
+  </div><!-- /.container -->
+</div>
+
+<div class="padded bg-white">
+  <div class="container">
+    @yield('content2')
+  </div><!-- /.container -->
+</div>
+
+  
 
       <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+    <div class="padded bg-info text-light">
+      <div class="container">
+        <form action="" method="post">
+          <h2>Get more information</h2>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+                Sign up for more information about our campus, offerings and events.
+              </div>
+              <div class="col-md-3 mb-3">
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <label for="firstName">First name</label>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <label for="lastName">Last name</label>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+              <div class="col-md-2 mb-3">
+                <button type="submit" class="btn btn-secondary">Sign up</button>
+              </div>
+            </div> 
+        </form>
+      </div><!-- /.container -->
+    </div>
+
+
+      <div class="bg-primary text-white">
+      <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          
+          <small class="d-block mb-3 text-muted">© 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+      </div>
     </main>
         
     </body>

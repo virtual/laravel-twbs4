@@ -1,4 +1,6 @@
-#myCarousel { margin-bottom: 2rem;}
+.carousel-caption {
+  bottom: 25%;
+}
 .carousel-item {
   height: 500px;
   background: #00675e;
@@ -15,5 +17,28 @@
   .carousel-item img {
     width: auto;
     height: 100%;
+  }
+}
+
+.action-fa {
+  .fas {
+    color: #00629B;
+    margin-top: -1rem;
+    display: block;
+    z-index: 4;
+    position: relative;
+    font-size: 2rem;
+  
+  }
+  .fas:before {
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+}
+.action-fa:hover {
+  a:hover {  text-decoration: none;}
+  .fas {
+    color: darken(#00629B,10);
   }
 }

@@ -3,12 +3,11 @@
 $body-bg: #f5f8fa;
 
 // Typography
-$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-sans-serif: "Rubik", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-serif: "Spectral", serif;
+$headings-font-family: $font-family-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
-
-
-
 
 // Variables
 //
@@ -46,6 +45,7 @@ $grid-breakpoints: (
   xl: 1200px
 ) !default;
  
+  
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
@@ -56,4 +56,4 @@ $container-max-widths: (
   lg: 992px,
   xl: 1200px
 ) !default;
-  
+ 

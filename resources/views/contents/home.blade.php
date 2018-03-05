@@ -39,6 +39,9 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<div class="text-center action-fa">
+  <a href="#subfeature" class="scrollable"><span class="fas fa-arrow-circle-down"></span></a>
+</div>
 @endsection
 
 @section('subfeature')
@@ -68,7 +71,7 @@
 @endsection
 
 
-@section('content')
+@section('subfeature2')
 <div class="row featurette">
   <div class="col-md-5 order-md-2">
     <h2 class="featurette-heading">140+ Areas of Study</h2>
@@ -82,7 +85,7 @@
 @endsection
 
 
-@section('content2')
+@section('content')
 <h2 class="featurette-heading">Latest News and Events</h2>
 <div class="row featurette">
   <div class="col-md-7">

@@ -66,25 +66,26 @@
 
      <!-- feature area --> 
      @yield('feature')
-     <div class="text-center action-fa">
-          <a href="#subfeature" class="scrollable"><span class="fas fa-arrow-circle-down"></span></a>
+     
+      @if(View::hasSection('subfeature'))
+        <div class="container">
+        @yield('subfeature')
+        </div><!-- /.container -->
+      @endif 
+
+      @if(View::hasSection('subfeature2'))
+        <div class="padded bg-primary text-light">
+          <div class="container">
+            @yield('subfeature2')
+          </div><!-- /.container -->
+        </div>
+      @endif
+
+      <div class="padded bg-white">
+        <div class="container">
+          @yield('content')
+        </div><!-- /.container -->
       </div>
-      <div class="container">
-      @yield('subfeature')
-      
-      </div><!-- /.container -->
-
-<div class="padded bg-primary text-light">
-  <div class="container">
-    @yield('content')
-  </div><!-- /.container -->
-</div>
-
-<div class="padded bg-white">
-  <div class="container">
-    @yield('content2')
-  </div><!-- /.container -->
-</div>
 
   
 

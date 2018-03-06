@@ -3,4 +3,10 @@
 @import "_style_topnav";
 @import "_style_menu";
 @import "_style_subfeature";
+@import "_style_featuregrid";
 @import "_style_footer.scss";
+
+.text-light, .text-white { 
+  a { color: #fff; 
+  }
+}

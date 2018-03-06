@@ -73,13 +73,14 @@
 
 @section('subfeature2')
 <div class="row featurette">
+  
+  <div class="offset-top col-md-7 order-md-1">
+      <img src="{{ asset('images/alexis-brown-85793-unsplash.jpg') }}" /> 
+  </div>
   <div class="col-md-5 order-md-2">
     <h2 class="featurette-heading">140+ Areas of Study</h2>
     <p class="lead">Discover </p>
     <a class="btn btn-info" href="#">View all</a>
-  </div>
-  <div class="offset-top col-md-7 order-md-1">
-      <img src="{{ asset('images/alexis-brown-85793-unsplash.jpg') }}" /> 
   </div>
 </div>
 @endsection
@@ -120,5 +121,47 @@
   <div class="col-md-5">
     <img src="{{ asset('images/stefan-stefancik-257625-unsplash.jpg') }}" /> 
   </div>
+</div>
+@endsection
+
+
+@section('grid')
+<div class="row no-gutters">
+  
+  <div class="col-md-3 col-sm-6 padded" style="background-image: url({{ asset('images/alexis-brown-85793-unsplash.jpg') }})">
+  <div class="overlay"></div>
+    <div class="col-sm-9 offset-sm-3 offset-xs-0 col-xs-12">
+      <div class="video">
+        <p><a href="#"><span class="far fa-play-circle"></span></a></p>
+        <p> A group of students plan the next event together <small>Hero name</small></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-3 col-sm-6 padded" style="background-image: url({{ asset('images/stefan-stefancik-257625-unsplash.jpg') }})">
+<div class="overlay"></div>
+  <div class="col-sm-9 offset-sm-3 offset-xs-0 col-xs-12">
+    <div class="video">
+      <p><a href="#"><span class="far fa-play-circle"></span></a></p>
+      <p> A group of students plan the next event together <small>News Service Outlet</small></p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3 col-sm-6 padded" style="background-image: url({{ asset('images/alexis-brown-85793-unsplash.jpg') }})">
+<div class="overlay"></div>
+  <div class="col-sm-9 offset-sm-3 offset-xs-0 col-xs-12">
+    <div class="video">
+      <p><a href="#"><span class="far fa-play-circle"></span></a></p>
+      <p> A group of students plan the next event together <small>Hero name</small></p>
+    </div>
+  </div>
+</div>
+  
+  <div class="col-md-3 col-sm-6 bg-primary text-white padded">
+      <h4>Experience our student communities</h4>
+      <p><a href="#">View more videos →</a></p>
+  </div>
+
 </div>
 @endsection

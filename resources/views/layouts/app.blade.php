@@ -68,9 +68,11 @@
      @yield('feature')
      
       @if(View::hasSection('subfeature'))
-        <div class="container">
-        @yield('subfeature')
-        </div><!-- /.container -->
+        <div class="padded">
+          <div class="container">
+          @yield('subfeature')
+          </div><!-- /.container -->
+        </div>
       @endif 
 
       @if(View::hasSection('subfeature2'))
@@ -87,6 +89,11 @@
         </div><!-- /.container -->
       </div>
 
+      <div>
+        <div class="feature-grid">
+          @yield('grid')
+        </div><!-- /.container -->
+      </div>
   
 
       <!-- FOOTER -->

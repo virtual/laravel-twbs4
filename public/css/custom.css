@@ -98,33 +98,46 @@
   }
 }
 
+.feature-grid {
+  color: #fff;
+}
+
 .feature-grid .padded {
   padding: 2rem;
+}
+
+.feature-grid .padded a {
+  -webkit-box-shadow: inset 0 0px 0 rgba(23, 162, 184, 0.2), inset 0 -1px 0 rgba(23, 162, 184, 0.7);
+          box-shadow: inset 0 0px 0 rgba(23, 162, 184, 0.2), inset 0 -1px 0 rgba(23, 162, 184, 0.7);
+}
+
+.feature-grid .padded a:hover {
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 0px 0 rgba(23, 162, 184, 0.2), inset 0 -1px 0 #17a2b8;
+          box-shadow: inset 0 0px 0 rgba(23, 162, 184, 0.2), inset 0 -1px 0 #17a2b8;
 }
 
 .feature-grid > .row > div {
   background-size: cover;
   position: relative;
   background-position: center;
+  min-height: 200px;
 }
 
-.feature-grid .video {
+.feature-grid a {
   color: #fff;
 }
 
-.feature-grid .video a {
-  position: absolute;
-  left: -4rem;
-  top: 0;
+.feature-grid .fa, .feature-grid .fas, .feature-grid .far {
+  color: inherit;
+  border: 1px solid #fff;
+  padding: 10px 9px 10px 11px;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.feature-grid .video .far {
-  font-size: 2rem;
-  position: absolute;
-  left: 1rem;
-  padding: 0;
-  margin: 0;
-  color: #fff;
+.feature-grid .fa:hover, .feature-grid .fa:focus, .feature-grid .fa:active, .feature-grid .fas:hover, .feature-grid .fas:focus, .feature-grid .fas:active, .feature-grid .far:hover, .feature-grid .far:focus, .feature-grid .far:active {
+  background-color: rgba(23, 162, 184, 0.7);
 }
 
 .feature-grid .overlay {
@@ -137,13 +150,34 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
-@media (max-width: 767px) {
-  .feature-grid .video {
-    position: relative;
-    min-height: 100px;
-  }
+.feature-grid .overlay.lighten {
+  background-color: rgba(78, 78, 78, 0.5);
+}
+
+.feature-grid .video-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.feature-grid .video-box small {
+  color: #ddd;
+}
+
+.feature-grid .video-play, .feature-grid .video-desc {
+  position: relative;
+  margin: 15px;
+}
+
+.feature-grid .video-play {
+  width: 2rem;
+  margin-right: 0;
 }
 
 footer {

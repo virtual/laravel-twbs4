@@ -128,39 +128,34 @@
 @section('grid')
 <div class="row no-gutters">
   
-  <div class="col-md-3 col-sm-6 padded" style="background-image: url({{ asset('images/alexis-brown-85793-unsplash.jpg') }})">
+<div class="col-md-3 col-sm-6" style="background-image: url({{ asset('images/alexis-brown-85793-unsplash.jpg') }})">
   <div class="overlay"></div>
-    <div class="col-sm-9 offset-sm-3 offset-xs-0 col-xs-12">
-      <div class="video">
-        <p><a href="#"><span class="far fa-play-circle"></span></a></p>
-        <p> A group of students plan the next event together <small>Hero name</small></p>
-      </div>
-    </div>
+  <div class="video-box">
+    <div class="video-play"><p><a title="Play video" href="#"><span aria-hidden="true" class="fas fa-play"></span><span class="sr-only">Play</span></a></p></div>
+    <div class="video-desc"> <p><a href="#">Inspiration: creativity in education</a> <small>Graphic Design, GPHY 210</small></p></div>
   </div>
+</div>
   
-  <div class="col-md-3 col-sm-6 padded" style="background-image: url({{ asset('images/stefan-stefancik-257625-unsplash.jpg') }})">
-<div class="overlay"></div>
-  <div class="col-sm-9 offset-sm-3 offset-xs-0 col-xs-12">
-    <div class="video">
-      <p><a href="#"><span class="far fa-play-circle"></span></a></p>
-      <p> A group of students plan the next event together <small>News Service Outlet</small></p>
-    </div>
+<div class="col-md-3 col-sm-6" style="background-image: url({{ asset('images/stefan-stefancik-257625-unsplash.jpg') }})">
+  <div class="overlay"></div>
+  <div class="video-box">
+    <div class="video-play"><p><a title="Play video" href="#"><span aria-hidden="true" class="fas fa-play"></span><span class="sr-only">Play</span></a></p></div>
+    <div class="video-desc"> <p><a href="#">Student volunteers provide free tax assistance</a> <small>Business Club, School of Business</small></p></div>
   </div>
 </div>
 
-<div class="col-md-3 col-sm-6 padded" style="background-image: url({{ asset('images/alexis-brown-85793-unsplash.jpg') }})">
-<div class="overlay"></div>
-  <div class="col-sm-9 offset-sm-3 offset-xs-0 col-xs-12">
-    <div class="video">
-      <p><a href="#"><span class="far fa-play-circle"></span></a></p>
-      <p> A group of students plan the next event together <small>Hero name</small></p>
-    </div>
+<div class="col-md-3 col-sm-6" style="background-image: url({{ asset('images/alexis-brown-82988-unsplash.jpg') }})">
+  <div class="overlay"></div>
+  <div class="video-box">
+    <div class="video-play"><p><a title="Play video" href="#"><span aria-hidden="true" class="fas fa-play"></span><span class="sr-only">Play</span></a></p></div>
+    <div class="video-desc"> <p><a href="#">Tips for for effective team leadership</a> <small>Office of Student Success</small></p></div>
   </div>
 </div>
+ 
   
   <div class="col-md-3 col-sm-6 bg-primary text-white padded">
-      <h4>Experience our student communities</h4>
-      <p><a href="#">View more videos →</a></p>
+      <h4>Follow our students' journeys</h4>
+      <p><a href="#">Video library ›</a></p>
   </div>
 
 </div>

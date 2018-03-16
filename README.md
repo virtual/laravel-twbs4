@@ -11,6 +11,8 @@ _Note: currently public folder includes use http; need to get it to use https in
 ## New Dev Environments
 
 - Install Vagrant and VirtualBox per [Laravel Homestead guide](https://laravel.com/docs/5.6/homestead)
+- `cd ~/Homestead`
+- `vagrant up` (and if everything's missing reload provision)
 - Add site path (homestead.test) to /etc/hosts:  `192.168.10.10 homestead.test`
 - `npm install`
 - `composer install`

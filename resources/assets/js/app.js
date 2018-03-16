@@ -6,6 +6,7 @@
  */
 
 require('./bootstrap');
+require('@fancyapps/fancybox/dist/jquery.fancybox.min')
 
 window.Vue = require('vue');
 

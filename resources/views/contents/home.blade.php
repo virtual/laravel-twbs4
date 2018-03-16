@@ -131,24 +131,24 @@
 <div class="col-md-3 col-sm-6" style="background-image: url({{ asset('images/alexis-brown-85793-unsplash.jpg') }})">
   <div class="overlay"></div>
   <div class="video-box">
-    <div class="video-play"><p><a title="Play video" href="#"><span aria-hidden="true" class="fas fa-play"></span><span class="sr-only">Play</span></a></p></div>
-    <div class="video-desc"> <p><a href="#">Inspiration: creativity in education</a> <small>Graphic Design, GPHY 210</small></p></div>
+    <div class="video-play"><p><a data-fancybox href="https://www.youtube.com/watch?v=71U_qjHLM58" title="Play video"><span aria-hidden="true" class="fas fa-play"></span><span class="sr-only">Play</span></a></p></div>
+    <div class="video-desc"><p><a data-fancybox href="https://www.youtube.com/watch?v=71U_qjHLM58">Inspiration: creativity in education</a> <small>Graphic Design, GPHY 210</small></p></div>
   </div>
 </div>
   
 <div class="col-md-3 col-sm-6" style="background-image: url({{ asset('images/stefan-stefancik-257625-unsplash.jpg') }})">
   <div class="overlay"></div>
   <div class="video-box">
-    <div class="video-play"><p><a title="Play video" href="#"><span aria-hidden="true" class="fas fa-play"></span><span class="sr-only">Play</span></a></p></div>
-    <div class="video-desc"> <p><a href="#">Student volunteers provide free tax assistance</a> <small>Business Club, School of Business</small></p></div>
+    <div class="video-play"><p><a data-fancybox href="https://www.youtube.com/watch?v=ZAd9IdF5tKI" title="Play video"><span aria-hidden="true" class="fas fa-play"></span><span class="sr-only">Play</span></a></p></div>
+    <div class="video-desc"><p><a data-fancybox href="https://www.youtube.com/watch?v=ZAd9IdF5tKI">Student volunteers provide free tax assistance</a> <small>Business Club, School of Business</small></p></div>
   </div>
 </div>
 
 <div class="col-md-3 col-sm-6" style="background-image: url({{ asset('images/alexis-brown-82988-unsplash.jpg') }})">
   <div class="overlay"></div>
   <div class="video-box">
-    <div class="video-play"><p><a title="Play video" href="#"><span aria-hidden="true" class="fas fa-play"></span><span class="sr-only">Play</span></a></p></div>
-    <div class="video-desc"> <p><a href="#">Tips for for effective team leadership</a> <small>Office of Student Success</small></p></div>
+    <div class="video-play"><p><a data-fancybox href="https://www.youtube.com/watch?v=-0nfNw6SS54" title="Play video"><span aria-hidden="true" class="fas fa-play"></span><span class="sr-only">Play</span></a></p></div>
+    <div class="video-desc"><p><a data-fancybox href="https://www.youtube.com/watch?v=-0nfNw6SS54">Tips for for effective team leadership</a> <small>Office of Student Success</small></p></div>
   </div>
 </div>
  

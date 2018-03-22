@@ -4,7 +4,11 @@
 
 ## Development
 
-Watch and compile changes using `npm run watch-poll`
+- `cd ~/Homestead`
+- `vagrant up`
+- `vagrant ssh` - log in to vagrant
+- `cd code/test`
+- `npm run watch-poll` - Watch and compile changes, must be done from vagrant server
 
 _Note: currently public folder includes use http; need to get it to use https instead_
 

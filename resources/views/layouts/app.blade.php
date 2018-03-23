@@ -64,11 +64,11 @@
   
     <div class="container">
 
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+     <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span aria-hidden class="fas fa-bars"></span> Menu
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="list-inline">
+        <ul>
           <li><a href="#">Apply &amp; Register</a></li>
           <li class="dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Areas of Study</a>

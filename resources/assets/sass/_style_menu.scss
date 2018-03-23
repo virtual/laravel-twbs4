@@ -3,24 +3,40 @@
   .navbar-brand { line-height: 1.2rem; padding-right:20px; }
   .navbar-brand > .fa, .navbar-brand > .fas { float:left; font-size: 36px; padding: 0 3px 0 0 }
 }
-
+.navbar-toggler { padding-top: 15px; padding-bottom: 15px}
 .megamenu {
   background: $primary;
   font-size: 1rem;
-  ul, div { margin-bottom: 0;  background: inherit; }
+  ul, div { margin-bottom: 0;  background: inherit; padding-left:0; }
   ul.distributed {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
    
-  .list-inline li { display:inline-block; color: #eee; background: inherit;
-    a { color: inherit; display:block; padding: 10px 15px;}
+  li { display:inline-block; color: #eee; background: inherit;
+    a, .nav-link { color: inherit; display:block; padding: 10px 15px;}
   }
-  .list-inline li.show > a { background: lighten($primary, 1) }
-  .dropdown-menu{ color: inherit; background: darken($primary, 10);
+  li.show > a { background: lighten($primary, 5) }
+  .dropdown-menu{ color: inherit; background: darken($primary, 5);
     a { color: inherit; display:block; }
     a:hover { background: darken($primary, 13)}
   }
 } 
 
+@include media-breakpoint-down(xs) {
+  .megamenu li { display:block;}
+  .dropdown-menu { display: none !important; }
+  .dropdown.show .dropdown-menu {
+    display: block !important;
+    position: relative !important;
+    transform: none !important;
+    float: none !important;
+    //top: auto;
+    //left: auto;
+    width: 100%;
+    a {
+      padding-left: 15px;
+    }
+  }
+}

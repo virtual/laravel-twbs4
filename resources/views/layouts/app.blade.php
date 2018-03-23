@@ -12,7 +12,7 @@
       <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
       <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
       
-      <meta name="description" content="Voted best fake small-town university in 2014, Knight University has the education you are looking forward to take your skills to the next level." />
+      <meta name="description" content="Voted best fake small-town university in 2014, Knight University has the education you are looking for to take your skills to the next level." />
       <meta name="keywords" content="higher education, website" />
       <meta name="author" content="Jeanine Schoessler, satinflame design">
       <meta property="og:title" content="Knight Unviersity" />
@@ -20,7 +20,7 @@
       <meta property="og:image" content="http://virtual-laravel-twbs4.herokuapp.com/images/thumbnail.png" />
       <meta property="og:url" content="http://virtual-laravel-twbs4.herokuapp.com/" />
       <meta property="og:site_name" content="Yellowstone Odyssey" />
-      <meta property="og:description" content="Voted best fake small-town university in 2014, Knight University has the education you are looking forward to take your skills to the next level."/>
+      <meta property="og:description" content="Voted best fake small-town university in 2014, Knight University has the education you are looking for to take your skills to the next level."/>
       <meta property="og:locale" content="en_us" />
       <link rel="image_src" href="http://virtual-laravel-twbs4.herokuapp.com/images/thumbnail.png" />
   </head>

@@ -1,18 +1,30 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#24305e">
+      <title>Knight University</title>
 
-        <title>Knight University</title>
-
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    </head>
-    <body>
+      <meta name="csrf-token" content="{{ csrf_token() }}">
+      <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+      <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+      <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+      
+      <meta name="description" content="Voted best fake small-town university in 2014, Knight University has the education you are looking forward to take your skills to the next level." />
+      <meta name="keywords" content="higher education, website" />
+      <meta name="author" content="Jeanine Schoessler, satinflame design">
+      <meta property="og:title" content="Knight Unviersity" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="http://virtual-laravel-twbs4.herokuapp.com/images/thumbnail.png" />
+      <meta property="og:url" content="http://virtual-laravel-twbs4.herokuapp.com/" />
+      <meta property="og:site_name" content="Yellowstone Odyssey" />
+      <meta property="og:description" content="Voted best fake small-town university in 2014, Knight University has the education you are looking forward to take your skills to the next level."/>
+      <meta property="og:locale" content="en_us" />
+      <link rel="image_src" href="http://virtual-laravel-twbs4.herokuapp.com/images/thumbnail.png" />
+  </head>
+  <body>
    
     <header>
 
@@ -35,7 +47,7 @@
         <a class="navbar-brand" href="/"><span class="fas fa-chess-knight"></span> Knight<br/>University</a>
        
         
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -46,12 +58,17 @@
       
            
           </ul>
-          <form class="form-inline mt-2 mt-md-0">
 
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+ 
+
+          <form id="searchform" class="form-inline mt-2 mt-md-0"  method="get" action="http://www.satinflame.com/search/" class="form-horizontal" role="search">
+            <input type="hidden" name="cx" value="">
+            <input type="hidden" name="cof" value="FORID:11">
+
+            <div class="searchbox input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search" aria-label="Search">
               <div class="input-group-append">
-                <button type="submit" class="btn btn-primary"><span class="fa fa-search" aria-hidden="true"></span></button>
+                <button type="submit" class="searchicon btn btn-primary"><span class="fa fa-search"><span class="sr-only">Search</span></span></button>
               </div>
             </div>
           </form> 
@@ -114,6 +131,12 @@
           @yield('content')
         </div><!-- /.container -->
       </div>
+      
+      <div class="padded bg-white">
+        <div class="container">
+          @yield('spotlight')
+        </div><!-- /.container -->
+      </div>
 
       <div>
         <div class="feature-grid">
@@ -152,7 +175,8 @@
         </form>
       </div><!-- /.container -->
     </div>
-
+    </main>
+   
 
       <footer class="bg-dark text-white">
       <div class="container py-5">
@@ -201,7 +225,6 @@
         </div>
       </div> 
       </footer>
-    </main>
         
     </body>
  

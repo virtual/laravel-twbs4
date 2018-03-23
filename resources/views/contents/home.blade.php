@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('feature')
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="feature-carousel" class="carousel slide" data-ride="carousel">
  
   <div class="carousel-inner">
    
@@ -13,8 +13,8 @@
           <h1>Advanced technology</h1>
           <p>Knight University's campus has the tools you need for all projects&mdash;big and small</p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            <a href="#" class="btn btn-secondary my-2">Discover Resources</a>
+            <a href="#" class="btn btn-primary my-2">Ask a Question</a>
           </p> 
         </div>
       </div>
@@ -30,11 +30,11 @@
       </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#feature-carousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#feature-carousel" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -74,19 +74,46 @@
 @section('subfeature2')
 <div class="row featurette">
   
-  <div class="offset-top col-md-7 order-md-1">
+  <div class="offset-top col-md-5 order-md-1">
       <img src="{{ asset('images/alexis-brown-85793-unsplash.jpg') }}" /> 
   </div>
-  <div class="col-md-5 order-md-2">
+  <div class="col-md-7 order-md-2">
     <h2 class="featurette-heading">140+ Areas of Study</h2>
-    <p class="lead">Discover </p>
-    <a class="btn btn-secondary" href="#">View all</a>
+    <p class="lead">With fields including technology and science to history and arts, you're sure to be inspired from your education at Knight University.  </p>
+    <a class="btn btn-secondary" href="#">View all areas of study</a>
   </div>
 </div>
 @endsection
 
-
 @section('content')
+<h2 class="featurette-heading">Latest News and Events</h2>
+<div class="row featurette">
+  <div class="col-md-6">
+    <h3>Why Knight University?</h3>
+    <p>All our courses are rigorously audited to ensure only the best education is provided to our students. </p>
+    <ul>
+      <li><a href="">Lorem  velit.</a></li>
+      <li><a href="">Eaque  dicta officia eveniet! Eius earum rem id.</a></li>
+      <li><a href="">Exercit  uptate at!</a></li>
+      <li><a href="">Unde modi, f dit laboriosam?</a></li>
+      <li><a href="">Quidem upti.</a></li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <h3>Over 300,000 Graduates</h3>
+    <p>sit amet consectetur adipisicing elit. Vero at laboriosam quo, doloremque dolore distinctio iusto labore tenetur, nostrum sunt eaque porro! Aut tenetur nulla nam fugit blanditiis consequuntur enim?</p>
+    <ul>
+      <li><a href="">Lorem  velit.</a></li>
+      <li><a href="">Eaque  dicta officia eveniet! Eius earum rem id.</a></li>
+      <li><a href="">Exercit  uptate at!</a></li>
+      <li><a href="">Unde modi, f dit laboriosam?</a></li>
+      <li><a href="">Quidem upti.</a></li>
+    </ul>
+  </div>
+</div>
+@endsection
+
+@section('randomfeatures')
 <h2 class="featurette-heading">Latest News and Events</h2>
 <div class="row featurette">
   <div class="col-md-7">
@@ -123,6 +150,48 @@
   </div>
 </div>
 @endsection
+
+@section('spotlight')
+<h2>News and Events</h2>
+<div id="spotlight" class="carousel slide" data-ride="carousel">
+ 
+  <div class="carousel-inner">
+   
+    <div class="carousel-item active">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h3 class="featurette-heading">Students make a difference <span class="text-muted">Jan 2018</span></h3>
+          <p class="lead">Business students assist in preparing taxes for low-income families. <a href="">Read more</a></p>
+        </div>
+        <div class="col-md-5">
+          <img src="{{ asset('images/stefan-stefancik-257625-unsplash.jpg') }}" /> 
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h3 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h3>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="{{ asset('images/alexis-brown-85793-unsplash.jpg') }}" /> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#spotlight" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#spotlight" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+   
+</div>
+@endsection
+
 
 
 @section('grid')

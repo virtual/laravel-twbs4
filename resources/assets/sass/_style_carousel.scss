@@ -1,18 +1,19 @@
-.carousel-caption {
-  bottom: 25%;
-}
-.carousel-item {
-  height: 500px;
-  background: $primary;
-  img {
-    width: 100%;
-    height: auto;
-    -webkit-filter: sepia(100%) hue-rotate(150deg) saturate(130%) brightness(100%);
-    filter: sepia(100%) hue-rotate(150deg) saturate(130%) brightness(100%);
-    opacity: .3;
+#feature-carousel {
+  .carousel-caption {
+    bottom: 25%;
+  }
+  .carousel-item {
+    height: 500px;
+    background: $primary;
+    img {
+      width: 100%;
+      height: auto;
+      -webkit-filter: sepia(100%) hue-rotate(150deg) saturate(130%) brightness(100%);
+      filter: sepia(100%) hue-rotate(150deg) saturate(130%) brightness(100%);
+      opacity: .3;
+    }
   }
 }
-
 @media (max-width: 767px) {
   .carousel-item img {
     width: auto;

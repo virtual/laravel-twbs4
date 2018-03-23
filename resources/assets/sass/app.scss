@@ -31,3 +31,10 @@
 main > .container { margin-top: 1rem; padding: 2rem 0;}
 .padded { padding: 2rem 0;} 
 img { max-width: 100%; width: auto; height: auto;}
+
+
+.form-inline .searchbox input.form-control { display:none;}
+.form-inline .searchbox .btn {
+  background-color: transparent; color: $primary; border: 0;
+}
+.form-inline .searchbox.active .btn { background: $primary; color: #fff}

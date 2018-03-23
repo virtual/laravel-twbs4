@@ -30,4 +30,15 @@ jQuery(document).ready(function() {
       scrollTop: $($(this).attr("href")).offset().top - 40
     }, 500);
   });
+
+  
+  $(".searchicon").click(function (event) {
+    if (!($(this).hasClass('active'))) {
+      $(this).addClass('active');
+      event.preventDefault();
+      $('.searchbox input').show(); //noscript 
+      $('.searchbox input').focus();
+      }
+  });
 });
+

@@ -33,10 +33,8 @@
       <nav class="navbar navbar-expand-sm navmenu">
       <div class="container">
         <a class="navbar-brand" href="/"><span class="fas fa-chess-knight"></span> Knight<br/>University</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span aria-hidden class="fas fa-bars"></span> Menu
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+       
+        
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
@@ -56,10 +54,38 @@
                 <button type="submit" class="btn btn-primary"><span class="fa fa-search" aria-hidden="true"></span></button>
               </div>
             </div>
-          </form>
-        </div>
+          </form> 
         </div>
       </nav>
+
+
+
+<nav class="nav nav-underline megamenu navbar-expand-sm navmenu">
+  
+    <div class="container">
+
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span aria-hidden class="fas fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="list-inline">
+          <li><a href="#">Apply &amp; Register</a></li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Areas of Study</a>
+            <div class="dropdown-menu">
+              <a href="#">Professional Degrees</a>
+              <a href="#">Transfer Degrees</a>
+              <a href="#">Certificates</a>
+            </div>
+          </li>
+          <li><a href="#">Campus Life</a></li>
+          <li><a href="#">About</a></li>  
+        </ul>
+</div>
+        </div>
+      </nav> 
+       
+
     </header>
 
     <main role="main">
@@ -97,7 +123,7 @@
   
 
       <!-- FOOTER -->
-    <div class="padded bg-info text-light">
+    <div class="padded bg-info">
       <div class="container">
         <form action="" method="post">
           <h2>Get more information</h2>
@@ -128,8 +154,8 @@
     </div>
 
 
-      <div class="bg-primary text-white">
-      <footer class="container py-5">
+      <footer class="bg-dark text-white">
+      <div class="container py-5">
       <div class="row">
         <div class="col-12 col-md">
           
@@ -173,9 +199,8 @@
             <li><a class="text-muted" href="#">Terms</a></li>
           </ul>
         </div>
-      </div>
-    </footer>
-      </div>
+      </div> 
+      </footer>
     </main>
         
     </body>

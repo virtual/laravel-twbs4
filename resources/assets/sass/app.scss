@@ -10,6 +10,19 @@
 @import '~bootstrap/scss/bootstrap'; 
 @import '~@fancyapps/fancybox/dist/jquery.fancybox.min'; 
 
+// Customizations
+@import "_style_carousel";
+@import "_style_topnav";
+@import "_style_menu";
+@import "_style_subfeature";
+@import "_style_featuregrid";
+@import "_style_footer.scss";
+
+.text-light, .text-white { 
+  a { color: #fff; 
+  }
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);

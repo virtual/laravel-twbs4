@@ -80,7 +80,7 @@
   <div class="col-md-5 order-md-2">
     <h2 class="featurette-heading">140+ Areas of Study</h2>
     <p class="lead">Discover </p>
-    <a class="btn btn-info" href="#">View all</a>
+    <a class="btn btn-secondary" href="#">View all</a>
   </div>
 </div>
 @endsection

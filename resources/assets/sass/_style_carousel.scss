@@ -3,7 +3,7 @@
 }
 .carousel-item {
   height: 500px;
-  background: #00675e;
+  background: $primary;
   img {
     width: 100%;
     height: auto;
@@ -22,7 +22,7 @@
 
 .action-fa {
   .fas {
-    color: #00629B;
+    color: $primary;
     margin-top: -1rem;
     display: block;
     z-index: 4;
@@ -39,6 +39,6 @@
 .action-fa:hover {
   a:hover {  text-decoration: none;}
   .fas {
-    color: darken(#00629B,10);
+    color: darken($primary,10);
   }
 }

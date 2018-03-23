@@ -1,4 +1,5 @@
 footer {
+  background: $dark;
   overflow: auto; padding-top: 3rem; padding-bottom: 3rem; 
-  a { color: rgb(0, 245, 223); }
+  a { color: $secondary; }
 }

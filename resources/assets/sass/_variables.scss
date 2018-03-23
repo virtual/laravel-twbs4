@@ -25,10 +25,23 @@ $orange:  #DC4405 !default;
 $yellow:  #ffb500 !default;
 $green:   #00685E !default; 
 $lightgreen: #43B02A !default;
- 
 
-$primary:       $green !default;
-$secondary:     $blue !default;
+$palette2a: #0b0c10;
+$palette2b: #1f2833;
+$palette2c: #c5c6c7;
+$palette2d: #66fcf1;
+$palette2e: #45a29e;
+
+$palette3a: #f8e9a1; 
+$palette3b: #f76c6c; 
+$palette3c: #a8d0e6; 
+$palette3d: #374785; 
+$palette3e: #24305e;
+
+$primary:       $palette3d !default;
+$secondary:     $palette3b !default;
+$light:         $palette3c !default;
+$dark:          $palette3e !default;
 $success:       $lightgreen !default; 
  
 

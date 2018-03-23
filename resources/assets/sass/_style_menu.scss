@@ -1,7 +1,26 @@
 .navmenu { background: rgba(175, 162, 162, 0.3);  
-  .nav-link { color: rgba(9, 52, 105, 0.8)}
+  .nav-link { color: darken($primary,10)}
   .navbar-brand { line-height: 1.2rem; padding-right:20px; }
   .navbar-brand > .fa, .navbar-brand > .fas { float:left; font-size: 36px; padding: 0 3px 0 0 }
 }
 
- 
+.megamenu {
+  background: $primary;
+  font-size: 1rem;
+  ul, div { margin-bottom: 0;  background: inherit; }
+  ul.distributed {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+   
+  .list-inline li { display:inline-block; color: #eee; background: inherit;
+    a { color: inherit; display:block; padding: 10px 15px;}
+  }
+  .list-inline li.show > a { background: lighten($primary, 1) }
+  .dropdown-menu{ color: inherit; background: darken($primary, 10);
+    a { color: inherit; display:block; }
+    a:hover { background: darken($primary, 13)}
+  }
+} 
+

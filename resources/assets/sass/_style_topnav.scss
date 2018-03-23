@@ -1,5 +1,7 @@
 .topnav {
+  font-size: .8rem;
   background-color: rgba(52, 58, 64, 0.7);
+  .fa, .far, .fas { font-size: 1rem;}
   ul, li { list-style: none; display: inline-block; margin:0; padding:0;}
   .nav-link { display:inline-block; color:hsla(212, 11%, 83%, .8); padding: .5rem; }
 }

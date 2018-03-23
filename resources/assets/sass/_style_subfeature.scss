@@ -1,5 +1,7 @@
 .subfeature {
+  text-align: center;
   .fa, .fab, .far, .fas { font-size: 124px; text-align: center; padding: .3rem; }
+  p { text-align: left;}
   &> div > a {
     text-align: center;
     display: block;

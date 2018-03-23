@@ -9915,7 +9915,12 @@ li.fancybox-thumbs-loading {
 }
 
 .topnav {
+  font-size: .8rem;
   background-color: rgba(52, 58, 64, 0.7);
+}
+
+.topnav .fa, .topnav .far, .topnav .fas {
+  font-size: 1rem;
 }
 
 .topnav ul, .topnav li {
@@ -10027,10 +10032,18 @@ li.fancybox-thumbs-loading {
   }
 }
 
+.subfeature {
+  text-align: center;
+}
+
 .subfeature .fa, .subfeature .fab, .subfeature .far, .subfeature .fas {
   font-size: 124px;
   text-align: center;
   padding: .3rem;
+}
+
+.subfeature p {
+  text-align: left;
 }
 
 .subfeature > div > a {

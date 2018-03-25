@@ -23,6 +23,11 @@
       <meta property="og:description" content="Voted best fake small-town university in 2014, Knight University has the education you are looking for to take your skills to the next level."/>
       <meta property="og:locale" content="en_us" />
       <link rel="image_src" href="http://virtual-laravel-twbs4.herokuapp.com/images/thumbnail.png" />
+
+      <noscript>
+      <style>
+      .navbar-collapse, .collapse, .dropdown-menu { display:block !important}
+      </style></noscript>
   </head>
   <body>
    
@@ -188,39 +193,39 @@
         <div class="col-6 col-md">
           <h5>Features</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Cool stuff</a></li>
-            <li><a class="text-muted" href="#">Random feature</a></li>
-            <li><a class="text-muted" href="#">Team feature</a></li>
-            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-            <li><a class="text-muted" href="#">Another one</a></li>
-            <li><a class="text-muted" href="#">Last time</a></li>
+            <li><a href="#">Cool stuff</a></li>
+            <li><a href="#">Random feature</a></li>
+            <li><a href="#">Team feature</a></li>
+            <li><a href="#">Stuff for developers</a></li>
+            <li><a href="#">Another one</a></li>
+            <li><a href="#">Last time</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>Resources</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Resource</a></li>
-            <li><a class="text-muted" href="#">Resource name</a></li>
-            <li><a class="text-muted" href="#">Another resource</a></li>
-            <li><a class="text-muted" href="#">Final resource</a></li>
+            <li><a href="#">Resource</a></li>
+            <li><a href="#">Resource name</a></li>
+            <li><a href="#">Another resource</a></li>
+            <li><a href="#">Final resource</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>Resources</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Business</a></li>
-            <li><a class="text-muted" href="#">Education</a></li>
-            <li><a class="text-muted" href="#">Government</a></li>
-            <li><a class="text-muted" href="#">Gaming</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Government</a></li>
+            <li><a href="#">Gaming</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>About</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Team</a></li>
-            <li><a class="text-muted" href="#">Locations</a></li>
-            <li><a class="text-muted" href="#">Privacy</a></li>
-            <li><a class="text-muted" href="#">Terms</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
           </ul>
         </div>
       </div> 

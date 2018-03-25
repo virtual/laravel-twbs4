@@ -25,10 +25,13 @@
 } 
 
 @include media-breakpoint-down(xs) {
+  .navbar-toggler { display:block; width: 100%; text-align: left;} 
   .megamenu li { display:block;}
   .dropdown-menu { display: none !important; }
   .dropdown.show .dropdown-menu {
     display: block !important;
+  }
+  .dropdown .dropdown-menu {
     position: relative !important;
     transform: none !important;
     float: none !important;

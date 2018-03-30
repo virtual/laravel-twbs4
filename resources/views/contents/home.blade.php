@@ -2,9 +2,17 @@
 
 @section('feature')
 <section class="carousel slick-slider">
-    
   <div>
     <img alt="Studying" src="./images/slider2.jpg">
+    <div class="caption">
+        <div><h2>Advanced technology</h2>
+          <p>Knight University's campus has the tools you need for all projects&mdash;big and small</p>
+          </div>
+          <p>
+            <a href="#" class="btn btn-secondary my-2">Discover Resources</a>
+            <a href="#" class="btn btn-primary my-2">Ask a Question</a>
+          </p> 
+    </div>
   </div>
 
     

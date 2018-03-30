@@ -1,6 +1,29 @@
 @extends('layouts.app')
 
 @section('feature')
+<section class="variable slick-slider">
+    <div>
+      <img src="http://placehold.it/350x300?text=1">
+    </div>
+    <div>
+      <img src="http://placehold.it/200x300?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/100x300?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/200x300?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/300x300?text=6">
+    </div>
+  </section>
+@endsection
+
+@section('featureold')
 <div id="feature-carousel" class="carousel slide" data-ride="carousel">
  
   <div class="carousel-inner">

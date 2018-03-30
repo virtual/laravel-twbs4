@@ -9,8 +9,9 @@
 
       <meta name="csrf-token" content="{{ csrf_token() }}">
       <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-      <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+      <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
       <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+      <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
       
       <meta name="description" content="Voted best fake small-town university in 2014, Knight University has the education you are looking for to take your skills to the next level." />
       <meta name="keywords" content="higher education, website" />
@@ -234,4 +235,11 @@
     </body>
  
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/slick.min.js') }}"></script>
+    <script>
+    $(function() {
+      slider = $('.slick-slider')
+      slider.slick();
+    });
+    </script>
 </html>

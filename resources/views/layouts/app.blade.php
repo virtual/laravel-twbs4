@@ -239,7 +239,67 @@
     <script>
     $(function() {
       slider = $('.slick-slider')
-      slider.slick();
+      slickOptions = {
+        dots: true,
+        arrows: false,
+  infinite: true,
+  autoplay: true,
+        arrows: false,
+        speed: 1000,
+        autoplaySpeed: 8000 ,
+  slidesToShow: 1,
+  slidesToScroll: 2,
+  centerMode: true,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+      }
+      slider.slick(slickOptions);
+      $('.slick-slider .caption').each(function() {
+        var $slide = $(this).parent();
+        
+        // Add aria-describedby to slider dots
+        if (slickOptions.dots) {
+          if ($slide.attr('aria-describedby') != undefined) { // ignore extra/cloned slides
+            console.log($slide.attr('aria-describedby'))
+            $(this).attr('id', $slide.attr('aria-describedby'));
+          }
+        }
+      });
+
+      // $('.slick-slider .slick-active').find('video').get(0).play();
+      // slider.on('afterChange', function(event, slick, currentSlide, nextSlide) {
+      //   if ($('.slick-slider .slick-active').hasClass('vid')) {
+      //     $('.slick-slider .slick-active').find('video').get(0).play();
+      //   }
+      // });
     });
+
     </script>
 </html>

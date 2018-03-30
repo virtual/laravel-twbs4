@@ -2,25 +2,45 @@
 
 @section('feature')
 <section class="variable slick-slider">
-    <div>
-      <img src="http://placehold.it/350x300?text=1">
-    </div>
-    <div>
-      <img src="http://placehold.it/200x300?text=2">
-    </div>
-    <div>
-      <img src="http://placehold.it/100x300?text=3">
-    </div>
-    <div>
-      <img src="http://placehold.it/200x300?text=4">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=5">
-    </div>
-    <div>
-      <img src="http://placehold.it/300x300?text=6">
-    </div>
-  </section>
+    
+  <div>
+    <img alt="Studying" src="./images/slider2.jpg">
+  </div>
+
+    
+	<div>
+		<img alt="A teacher and student discuss a project" src="./images/slider3.jpg">
+		<div class="caption">
+			<div>
+				<a href="#">Make a difference</a>
+			</div>
+		</div>
+  </div>
+
+	<div class="vid">
+		<object class="embed-responsive">
+			<img alt="Student running" src="./images/slider1.jpg">
+			<div class="video-container" data-poster-frame="./images/slider1.jpg" data-video-src=".mp4">
+				<video autoplay="" height="240" loop="" onloadedmetadata="this.muted = true" poster="./images/slider1.jpg" width="720"><source src=".mp4"> <source src=".webm"></video>
+			</div>
+		</object>
+		<div class="caption">
+			<div>
+				<a href="#">Discover your potential</a>
+			</div>
+		</div>
+  </div>
+  
+	<div>
+		<img alt="A teacher and student discuss a project" src="./images/slider3.jpg">
+		<div class="caption">
+			<div>
+				<a href="#">Make a difference</a>
+			</div>
+		</div>
+  </div>
+  
+</section>
 @endsection
 
 @section('featureold')

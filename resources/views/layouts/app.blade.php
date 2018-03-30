@@ -238,13 +238,12 @@
     <script src="{{ asset('js/slick.min.js') }}"></script>
     <script>
     $(function() {
-      slider = $('.slick-slider')
+      slider = $('.slick-slider.carousel');
       slickOptions = {
         dots: true,
         arrows: false,
         infinite: true,
-        autoplay: true,
-        arrows: false,
+        autoplay: true, 
         speed: 1000,
         autoplaySpeed: 8000,
         slidesToShow: 1,
@@ -290,12 +289,20 @@
         }
       });
 
+     
       // $('.slick-slider .slick-active').find('video').get(0).play();
       // slider.on('afterChange', function(event, slick, currentSlide, nextSlide) {
       //   if ($('.slick-slider .slick-active').hasClass('vid')) {
       //     $('.slick-slider .slick-active').find('video').get(0).play();
       //   }
       // });
+
+       contentfeatureslider = $('.slick-slider.content-feature');
+       contentfeatureOptions = {
+        arrows: true,
+        infinite: true
+      };
+      contentfeatureslider.slick({contentfeatureOptions});
     });
 
     </script>

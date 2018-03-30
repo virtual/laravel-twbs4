@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('feature')
-<section class="variable slick-slider">
+<section class="carousel slick-slider">
     
   <div>
     <img alt="Studying" src="./images/slider2.jpg">
@@ -195,24 +195,21 @@
 @endsection
 
 @section('spotlight')
-<h2>News and Events</h2>
-<div id="spotlight" class="carousel slide" data-ride="carousel">
- 
-  <div class="carousel-inner">
-   
-    <div class="carousel-item active">
+<section class="content-feature slick-slider">
+    <div>
       <div class="row featurette">
-        <div class="col-md-7">
-          <h3 class="featurette-heading">Students make a difference <span class="text-muted">Jan 2018</span></h3>
-          <p class="lead">Business students assist in preparing taxes for low-income families. <a href="">Read more</a></p>
+          <div class="col-md-7">
+            <h3 class="featurette-heading">Students make a difference <span class="text-muted">Jan 2018</span></h3>
+            <p class="lead">Business students assist in preparing taxes for low-income families. <a href="">Read more</a></p>
+          </div>
+          <div class="col-md-5">
+            <img src="{{ asset('images/stefan-stefancik-257625-unsplash.jpg') }}" /> 
+          </div>
         </div>
-        <div class="col-md-5">
-          <img src="{{ asset('images/stefan-stefancik-257625-unsplash.jpg') }}" /> 
-        </div>
-      </div>
     </div>
-    <div class="carousel-item">
-      <div class="row featurette">
+  
+    <div>
+    <div class="row featurette">
         <div class="col-md-7 order-md-2">
           <h3 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h3>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -222,17 +219,9 @@
         </div>
       </div>
     </div>
-  </div>
-  <a class="carousel-control-prev" href="#spotlight" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#spotlight" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+
+  </section>
    
-</div>
 @endsection
 
 

@@ -33,7 +33,7 @@
   <body>
    
     <header>
-
+    <div id="skiptocontent"><a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a></div>
     <nav class="topnav nav nav-underline navbar-dark bg-dark">
     <div class="container d-flex justify-content-between align-items-center w-100">
  <ul>
@@ -111,11 +111,16 @@
 
     </header>
 
-    <main role="main">
+      <main id="maincontent" role="main">
 
      <!-- feature area --> 
      @yield('feature')
      
+     
+     
+  
+
+
       @if(View::hasSection('subfeature'))
         <div class="padded">
           <div class="container">
